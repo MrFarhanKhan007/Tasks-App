@@ -4,9 +4,7 @@ A To-Do List mobile application to list down your tasks.
 ---
 
 ## Screenshots
-![](Images/image1.jpg)
-![](Images/image2.jpg)
-![](Images/image3.jpg)
+![](Images/collage copy.jpg)
 
 ## Motive
 The application exhibits local database system CRUD (Engender, Read, Update, Expunge) operations. Data is kept locally in the contrivance storage utilizing Sqlite. When the app is launched again, the utilizer can integrate tasks, close the app, clear the background, and still optically discern their task list.
