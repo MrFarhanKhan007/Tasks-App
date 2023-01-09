@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C1559"
+    android:padding="18dp"
+    tools:context=".activities.AddTaskActivity">
+
+    <ImageView
+        android:id="@+id/backBn_addTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+
+        app:tint="@color/white"
+
+        />
+
+    <TextView
+        android:id="@+id/headerTv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backBn_addTask"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/visby_round"
+        android:text="Add a task."
+        android:textColor="@color/white"
+
+        android:shadowColor="@color/black"
+        android:shadowRadius="15"
+        android:textSize="55sp" />
+
+    <TextView
+        android:id="@+id/headerTv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerTv1"
+        android:fontFamily="@font/visby_round"
+        android:text="and make your life easier"
+        android:textColor="#ffffff"
+        android:shadowColor="@color/black"
+        android:shadowRadius="15"
+        android:textSize="26sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#F1BCBC"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:gravity="center"
+            android:backgroundTint="#2563eb"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+
+            android:paddingVertical="25dp">
+
+            <EditText
+                android:id="@+id/addNewTaskEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/visby_round"
+                android:hint="Write your task here"
+                android:textColorHint="@color/white"
+                android:shadowColor="@color/black"
+                android:shadowRadius="15"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+
+                android:textColor="@color/white"
+
+                android:textSize="15.5sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/doneBn_addTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/done_button"
+        android:fontFamily="@font/visby_round"
+        android:padding="15dp"
+        android:text="Done"
+        android:shadowColor="@color/black"
+        android:shadowRadius="15"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15.5sp" />
+
+</RelativeLayout>
