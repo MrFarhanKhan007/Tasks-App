@@ -63,7 +63,7 @@
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/visby_round"
                 android:hint="Write your task here"
-                android:textSize="15.5sp"
+                android:textSize="22.5sp"
                 android:shadowColor="@color/black"
                 android:shadowRadius="15"
                 android:textColorHint="@color/white"
@@ -80,7 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/deleteButton"
-        android:background="#2563eb"
+        android:background="@drawable/done_button"
         android:fontFamily="@font/visby_round"
         android:padding="15dp"
         android:text="Update"
@@ -88,7 +88,7 @@
         android:shadowRadius="15"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="15.5sp" />
+        android:textSize="18.5sp" />
 
     <TextView
         android:id="@+id/deleteButton"
@@ -96,7 +96,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="8dp"
-        android:background="#2563eb"
+        android:background="@drawable/done_button"
         android:fontFamily="@font/visby_round"
         android:padding="15dp"
         android:shadowColor="@color/black"
@@ -104,6 +104,6 @@
         android:text="Delete"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="15.5sp" />
+        android:textSize="18.5sp" />
 
 </RelativeLayout>

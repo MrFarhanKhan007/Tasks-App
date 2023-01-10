@@ -77,7 +77,7 @@
 
                 android:textColor="@color/white"
 
-                android:textSize="15.5sp" />
+                android:textSize="22.5sp" />
 
         </LinearLayout>
 
@@ -96,6 +96,6 @@
         android:shadowRadius="15"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="15.5sp" />
+        android:textSize="18.5sp" />
 
 </RelativeLayout>
