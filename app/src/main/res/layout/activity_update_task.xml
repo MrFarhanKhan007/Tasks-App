@@ -24,7 +24,7 @@
         android:fontFamily="@font/visby_round"
         android:text="Update task."
         android:shadowColor="@color/black"
-        android:shadowRadius="15"
+        android:shadowRadius="1"
         android:textColor="@color/white"
         android:textSize="55sp" />
 
@@ -36,7 +36,7 @@
         android:fontFamily="@font/visby_round"
         android:text="life is all about updates"
         android:shadowColor="@color/black"
-        android:shadowRadius="15"
+        android:shadowRadius="1"
         android:textColor="#ffffff"
         android:textSize="26sp" />
 
@@ -65,7 +65,7 @@
                 android:hint="Write your task here"
                 android:textSize="22.5sp"
                 android:shadowColor="@color/black"
-                android:shadowRadius="15"
+                android:shadowRadius="1"
                 android:textColorHint="@color/white"
                 android:inputType="textMultiLine"
                 android:padding="12dp"
@@ -85,7 +85,7 @@
         android:padding="15dp"
         android:text="Update"
         android:shadowColor="@color/black"
-        android:shadowRadius="15"
+        android:shadowRadius="1"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="18.5sp" />
@@ -100,7 +100,7 @@
         android:fontFamily="@font/visby_round"
         android:padding="15dp"
         android:shadowColor="@color/black"
-        android:shadowRadius="15"
+        android:shadowRadius="1"
         android:text="Delete"
         android:textAlignment="center"
         android:textColor="@color/white"
