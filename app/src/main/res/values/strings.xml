@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Tasks</string>
+    <string name="tasks">Tasks</string>
+    <string name="todo">TODO</string>
+    <string name="write_your_task_here">Write your task here</string>
+    <string name="life_is_all_about_updates">life is all about updates</string>
+    <string name="update_task">Update task.</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="sample_task_text_view">Sample Task text view</string>
+    <string name="no_available_tasks_right_now_n_click_the_icon_to_add_a_task">No available tasks right now.\n Click the + icon to add a task.</string>
+    <string name="add_a_task">Add a task.</string>
+    <string name="and_make_your_life_easier">and make your life easier</string>
+    <string name="done">Done</string>
 </resources>

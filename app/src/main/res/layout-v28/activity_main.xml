@@ -23,12 +23,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/visby_round"
-        android:text="@string/no_available_tasks_right_now_n_click_the_icon_to_add_a_task"
+        android:text="No available tasks right now.\n Click the + icon to add a task. "
         android:textAlignment="center"
         android:layout_centerInParent="true"
         android:textColor="@color/text"
         android:visibility="invisible"
-        android:textSize="30sp" />
+        android:textSize="30dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/homeRecyclerView"
@@ -51,9 +51,9 @@
         android:background="@android:drawable/dialog_holo_light_frame"
         android:src="@drawable/ic_add"
         android:elevation="10.dp"
-        android:outlineSpotShadowColor="@color/text"
+        android:outlineSpotShadowColor="@color/black"
         app:backgroundTint="@color/card"
-        app:tint="@color/background"
+        app:tint="@color/text"
         android:contentDescription="@string/todo" />
 
 </RelativeLayout>

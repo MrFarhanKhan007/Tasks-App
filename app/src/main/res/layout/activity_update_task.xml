@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0c1559"
+    android:background="@color/background"
     android:padding="18dp"
     tools:context=".activities.UpdateTaskActivity">
 
@@ -13,7 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_back"
-        app:tint="@color/white" />
+        app:tint="@color/text"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/headerTv1"
@@ -22,10 +23,8 @@
         android:layout_below="@id/backButton_update"
         android:layout_marginTop="22dp"
         android:fontFamily="@font/visby_round"
-        android:text="Update task."
-        android:shadowColor="@color/black"
-        android:shadowRadius="1"
-        android:textColor="@color/white"
+        android:text="@string/update_task"
+        android:textColor="@color/text"
         android:textSize="55sp" />
 
     <TextView
@@ -34,23 +33,22 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/headerTv1"
         android:fontFamily="@font/visby_round"
-        android:text="life is all about updates"
-        android:shadowColor="@color/black"
-        android:shadowRadius="1"
-        android:textColor="#ffffff"
+        android:text="@string/life_is_all_about_updates"
+
+        android:textColor="@color/text"
         android:textSize="26sp" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:backgroundTint="#F1BCBC"
-        app:cardCornerRadius="10dp">
+        android:backgroundTint="@color/background"
+        app:cardCornerRadius="4dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#2563eb"
+            android:background="@color/card"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingHorizontal="20dp"
@@ -62,14 +60,13 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/visby_round"
-                android:hint="Write your task here"
+                android:hint="@string/write_your_task_here"
                 android:textSize="22.5sp"
-                android:shadowColor="@color/black"
-                android:shadowRadius="1"
-                android:textColorHint="@color/white"
+                android:textColorHint="@color/text"
                 android:inputType="textMultiLine"
                 android:padding="12dp"
-                android:textColor="#ffffff" />
+                android:textColor="@color/text"
+                android:autofillHints="" />
 
         </LinearLayout>
 
@@ -83,11 +80,10 @@
         android:background="@drawable/done_button"
         android:fontFamily="@font/visby_round"
         android:padding="15dp"
-        android:text="Update"
-        android:shadowColor="@color/black"
-        android:shadowRadius="1"
+        android:text="@string/update"
+
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/text"
         android:textSize="18.5sp" />
 
     <TextView
@@ -99,11 +95,9 @@
         android:background="@drawable/done_button"
         android:fontFamily="@font/visby_round"
         android:padding="15dp"
-        android:shadowColor="@color/black"
-        android:shadowRadius="1"
-        android:text="Delete"
+        android:text="@string/delete"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/text"
         android:textSize="18.5sp" />
 
 </RelativeLayout>

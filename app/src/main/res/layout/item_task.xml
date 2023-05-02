@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="12dp"
-    android:backgroundTint="#2563eb"
-    android:elevation="15dp"
-    app:cardCornerRadius="8dp">
+    android:backgroundTint="@color/card"
+    app:cardCornerRadius="4dp"
+    android:elevation="0.dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -20,29 +20,25 @@
             android:id="@+id/item_task_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/item_checkBox"
             android:ellipsize="end"
             android:fontFamily="@font/visby_round"
             android:maxLines="2"
-            android:shadowColor="@color/black"
-            android:shadowRadius="1"
-            android:text="Sample Task text view"
-            android:layout_toEndOf="@id/item_checkBox"
-            android:layout_centerVertical="true"
-            android:textColor="@color/white"
+            android:text="@string/sample_task_text_view"
+            android:textColor="@color/text"
             android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/item_checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:maxLines="2"
+            android:buttonTint="@color/background"
             android:ellipsize="end"
-            android:textColor="@color/white"
-            android:textSize="15.5sp"
-            android:shadowColor="@color/black"
-            android:shadowRadius="1"
-            android:buttonTint="@color/white"
-            android:fontFamily="@font/visby_round"/>
+            android:fontFamily="@font/visby_round"
+            android:maxLines="2"
+            android:textColor="@color/text"
+            android:textSize="15.5sp" />
 
     </RelativeLayout>
 
