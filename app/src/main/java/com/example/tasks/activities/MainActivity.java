@@ -15,6 +15,7 @@ import com.example.tasks.R;
 import com.example.tasks.adapter.TaskAdapter;
 import com.example.tasks.utils.TaskDatabase;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.ArrayList;
 
@@ -32,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        FirebaseAnalytics firebaseAnalytics = FirebaseAnalytics.getInstance(this);
+        firebaseAnalytics.setAnalyticsCollectionEnabled(true);
+        firebaseAnalytics.logEvent(FirebaseAnalytics.Event.APP_OPEN, null);
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -52,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
         adapter = new TaskAdapter(MainActivity.this, this, task_id, task_name);
 
-        if(adapter.getItemCount()==0) {
+        if (adapter.getItemCount() == 0) {
             noData.setVisibility(View.VISIBLE);
         }
 
@@ -64,14 +70,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode==1) {
+        if (requestCode == 1) {
             recreate();
         }
     }
 
     private void storeDataInArrays() {
         Cursor cursor = taskDb.readAllTask();
-        if(cursor.getCount()!=0) {
+        if (cursor.getCount() != 0) {
             while (cursor.moveToNext()) {
                 task_id.add(cursor.getString(0));
                 task_name.add(cursor.getString(1));
@@ -81,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        if(backFlag==0) {
+        if (backFlag == 0) {
             backFlag = 1;
         } else {
             super.onBackPressed();

@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.tasks.R;
 import com.example.tasks.utils.TaskDatabase;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class AddTaskActivity extends AppCompatActivity {
 
@@ -18,6 +19,11 @@ public class AddTaskActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        FirebaseAnalytics firebaseAnalytics = FirebaseAnalytics.getInstance(this);
+        firebaseAnalytics.setAnalyticsCollectionEnabled(true);
+
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_task);
 
@@ -27,12 +33,21 @@ public class AddTaskActivity extends AppCompatActivity {
         taskNameEt = findViewById(R.id.addNewTaskEditText);
         doneButton = findViewById(R.id.doneBn_addTask);
 
-        doneButton.setOnClickListener(view -> {
+
+
+        doneButton.setOnClickListener(v -> {
+            Bundle eventBundle = new Bundle();
+            eventBundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Done Button");
+            eventBundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "Click");
+            firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, eventBundle);
+
             TaskDatabase taskDb = new TaskDatabase(AddTaskActivity.this);
             taskDb.addTask(taskNameEt.getText().toString().trim());
             taskNameEt.setText("");
             finish();
         });
+
+
     }
 
 }
